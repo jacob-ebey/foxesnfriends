@@ -1,0 +1,13 @@
+stylesheet: work
+
+title: NBC Embraces Wartime Television
+previewImage: /assets/images/nbc-embraces-wartime-television.jpg
+
+header:
+  - /_shared/header.md
+
+main:
+  - body.md
+
+footer:
+  - /_shared/footer.md

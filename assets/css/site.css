@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: 1fr auto;
+}
+
+.top {
+  background-color: #f6f8fa;
+}
+
+header {
+  position: relative;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  border-top: 4px solid #c20017;
+  background-color: #003366;
+  color: #ffffff;
+  display: flex;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header a:hover {
+	color: #edf6ff;
+}
+
+header > h1 {
+  font-size: 1.6em;
+  margin-right: 1rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+header > ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #003366;
+}
+
+header > ul > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header > ul > li * {
+	font-size: 14px;
+	display: inline-block;
+	padding: 0.5rem;
+}
+
+header > ul > li > a {
+	transition: background-color .2s linear;
+}
+
+.hamburger {
+  fill: #ffffff;
+  margin-right: 1rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.hamburger-input {
+  display: none;
+}
+
+.hamburger-input:checked ~ .hamburger {
+	fill: gray;
+}
+
+.header-overlay {
+  display: none;
+}
+
+@media only screen and (max-width: 599px) {
+  .hamburger-input:checked ~ ul {
+		display: block;
+		z-index: 2;
+  }
+
+  .hamburger-input:checked ~ .header-overlay {
+    display: block;
+    position: static;
+		background-color: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		min-height: 200vh;
+		z-index: 1;
+  }
+}
+
+footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 1rem;
+  background-color: #003366;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 600px) {
+  header > ul {
+    position: relative;
+    display: flex;
+	}
+	
+	header > ul > li > a:hover {
+		background-color: #40668c;
+		border-radius: 3px;
+	}
+
+  .hamburger {
+    display: none;
+  }
+}

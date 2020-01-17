@@ -1,0 +1,25 @@
+{
+  "name": "foxesnfriends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "cuttlebelle",
+    "dev": "cuttlebelle watch -s",
+    "prod": "serve -d ./site"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27"
+  },
+  "devDependencies": {
+    "cuttlebelle": "^1.0.0-alpha.68",
+    "serve": "^11.3.0"
+  }
+}

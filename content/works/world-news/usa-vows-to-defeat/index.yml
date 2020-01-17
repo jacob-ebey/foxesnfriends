@@ -1,0 +1,13 @@
+stylesheet: work
+
+title: U.S. Vows To Defeat Whoever Their Enemy Is
+previewImage: /assets/images/usa-vows-to-defeat.jpg
+
+header:
+  - /_shared/header.md
+
+main:
+  - body.md
+
+footer:
+  - /_shared/footer.md
